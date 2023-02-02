@@ -1,0 +1,26 @@
+
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Num</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">Tele</th>
+        <th scope="col">Function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts; index as i">
+        <th scope="row">{{i}}</th>
+        <td>{{post.nom}}</td>
+        <td>{{post.prenom}}</td>
+        <td>{{post.email}}</td>
+        <td>{{post.tele}}</td>
+        <td>
+          <button type="button" class="btn btn-warning" routerLink="edit/{{i}}" >EDIT</button>
+          <button type="button" class="btn btn-danger" (click)="deletePost(i)" >DELETE</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

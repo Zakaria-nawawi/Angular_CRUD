@@ -1,0 +1,13 @@
+.formBloc{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+button{
+  margin: 20px 500px 50px 500px ;
+  align-self: center;
+}
+label{
+    margin: 5px;
+}
